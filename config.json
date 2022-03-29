@@ -1,0 +1,37 @@
+{
+  "chain": "POLYGON",
+  "contractAddress": "0x6382E0f18400b53fEDA0d931e8040C78581F15c9",
+  "devFee": 10,
+  "plans": [
+    {
+      "days": 14,
+      "totalReturn": 126,
+      "withdrawalFee": 10
+    },
+    {
+      "days": 21,
+      "totalReturn": 180,
+      "withdrawalFee": 10
+    },
+    {
+      "days": 28,
+      "totalReturn": 220,
+      "withdrawalFee": 10
+    },
+    {
+      "days": 14,
+      "totalReturn": 250,
+      "withdrawalFee": 10
+    },
+    {
+      "days": 21,
+      "totalReturn": 530,
+      "withdrawalFee": 10
+    },
+    {
+      "days": 28,
+      "totalReturn": 720,
+      "withdrawalFee": 10
+    }
+  ]
+}
