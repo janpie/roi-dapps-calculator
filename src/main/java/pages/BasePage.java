@@ -22,7 +22,7 @@ public class BasePage {
 
     protected BasePage(WebDriver driver) {
         this.driver = driver;
-        webDriverWait = new WebDriverWait(driver, 60);
+        webDriverWait = new WebDriverWait(driver, 5);
     }
 
     protected WebElement clickOn(WebElement element) {

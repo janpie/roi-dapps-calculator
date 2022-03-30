@@ -5,6 +5,8 @@ import misc.data_models.Plan;
 import misc.data_models.Transaction;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -58,7 +60,8 @@ public class DataAggregator {
                     .sum();
             double balance = sum - possibleWithdrawalsSum;
             if (balance != balance1) {
-                System.out.println("Predicted contract balance for " + future + " : " + String.format("%.2f", balance) + " " + ChainUtils.getChainCurrency());
+                String date = future.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM));
+                System.out.println("Predicted contract balance for " + date + " : " + String.format("%.2f", balance) + " " + ChainUtils.getChainCurrency());
                 balance1 = balance;
             }
             if (balance < -50000) {

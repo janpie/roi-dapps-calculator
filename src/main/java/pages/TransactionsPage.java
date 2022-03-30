@@ -50,7 +50,9 @@ public class TransactionsPage extends BasePage {
         List<String> transactions = new ArrayList<>();
         boolean proceed = true;
         while (proceed) {
-            transactions.addAll(getTextsFromList(transactionsList));
+            if (!transactionsList.isEmpty()) {
+                transactions.addAll(getTextsFromList(transactionsList));
+            }
             if (isDisplayed(nextPage)) {
                 clickOn(nextPage);
                 proceed = true;
