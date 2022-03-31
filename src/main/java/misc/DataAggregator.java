@@ -16,7 +16,7 @@ public class DataAggregator {
 
 
     public static void printPlansBalance(List<Transaction> transactions) {
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < MyAppConfig.plans.size(); i++) {
             int finalI = i;
             double sum = transactions
                     .stream()
